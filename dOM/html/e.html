@@ -1,0 +1,53 @@
+<!-- DOM
+ document    object        model
+    |          |
+    V          V
+ files     tags,elements   layout
+ eg:html,xml   eg:<h1><img>
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- if you type #k then it will display the div tag along with id as k mentioned -->
+    <div id="jobListings">
+
+
+    </div>
+
+    <div id="filters">
+        <label for="jobType">Job Type</label>
+        <select id="jobType">
+            <option value="all">All</option>
+            <option value="Part Time">Part Time</option>
+            <option value="Full Time">Full Time</option>
+        </select>
+
+
+        <label for="location">Location</label>
+        <!-- <input type="text" id="location"> -->
+        <select id="location">
+            <option value="all">Chennai</option>
+            <option value="a">Coimbatore</option>
+            <option value="ll">Pune</option>
+            <option value="l">Bangalore</option>
+            <option value="pl">Punjab</option>
+            <option value="al">Delhi</option>
+            <option value="alll">Kochi</option>
+            <!-- Locations will be dynamically added here -->
+        </select>
+        <label for="salary">Salary Range</label>
+        <input type="range" id="salary" min="0" max="100000" step="10000" value="50000">
+        <span id="salaryValue">50000</span>
+
+        <button id="filterBtn">Apply Filters</button>
+    </div>
+<script src="../javascript/script.js"></script>
+    
+</body>
+</html>
